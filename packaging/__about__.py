@@ -12,12 +12,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from .__about__ import (
-    __title__, __summary__, __uri__, __version__, __author__, __email__,
-    __license__, __copyright__
-)
-
 __all__ = [
     "__title__", "__summary__", "__uri__", "__version__", "__author__",
     "__email__", "__license__", "__copyright__",
 ]
+
+__title__ = "packaging"
+__summary__ = ""
+__uri__ = "https://github.com/dstufft/packaging"
+
+__version__ = "0.1.0"
+
+__author__ = "Donald Stufft and individual contributors"
+__email__ = "donald@stufft.io"
+
+__license__ = "Apache License, Version 2.0"
+__copyright__ = "Copyright 2013 Donald Stufft"
