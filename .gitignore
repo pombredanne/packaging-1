@@ -10,3 +10,6 @@ build
 .coverage
 .tox
 .cache
+
+# Documentation
+docs/_build/
