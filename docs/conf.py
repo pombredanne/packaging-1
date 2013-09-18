@@ -13,12 +13,18 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
+import imp
 import os.path
-import sys
 
-sys.path.insert(0, os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 
-import packaging
+packaging = imp.load_source("packaging.__about__",
+    os.path.abspath(os.path.join(
+        os.path.dirname(__file__),
+        os.pardir,
+        "packaging/__about__.py",
+    )),
+)
+
 
 # -- General configuration ----------------------------------------------------
 
