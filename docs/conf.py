@@ -20,6 +20,7 @@ import os.path
 packaging = imp.load_source("packaging.__about__",
     os.path.abspath(os.path.join(
         os.path.dirname(__file__),
+        os.pardir,
         "packaging/__about__.py",
     )),
 )
